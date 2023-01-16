@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getGifs } from "../helpers/getGifs";
+// import PropTypes from 'prop-types'
 
 export const useFetchGifs = (category) => {
   // creamos un useState para mantener el estado de la app
@@ -31,3 +32,4 @@ export const useFetchGifs = (category) => {
     isLoading,
   };
 };
+

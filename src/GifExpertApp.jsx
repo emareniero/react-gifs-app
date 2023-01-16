@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { AddCategory, GifGrid } from "./components";
 
-export const GifEpertApp = () => {
+export const GifExpertApp = () => {
   // Vamos a definir un hook para controlar el estado de las categorías
-  const [categories, setCategories] = useState(["One Punch"]);
+  const [categories, setCategories] = useState(["Tenis"]);
 
   //   console.log(categories);
 
@@ -14,6 +14,7 @@ export const GifEpertApp = () => {
 
     // vemos el evento en la ocnsola solo p chequera
     console.log(event);
+    console.log('...')
 
     // Agregamos nueva categoria al arrelgo
     setCategories([event, ...categories]);
