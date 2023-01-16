@@ -1,3 +1,6 @@
+// Importamos el prop-types
+import PropTypes from 'prop-types';
+
 
 export const GifItem = ({ title, img }) => {
 
@@ -9,4 +12,12 @@ export const GifItem = ({ title, img }) => {
 
     </div>
   )
+}
+
+// Ponemos las características que tienen que tener las prop types.
+GifItem.propTypes = {
+
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
+
 }
